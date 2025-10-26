@@ -1,3 +1,7 @@
+# Twinly
+
+Twinly is an AI-powered networking follow-up automation system that uses iPhone voice recording, Claude for conversation analysis, and Toolhouse for intelligent multi-API orchestration. The agent extracts key context (contacts, companies, action items) from transcribed conversations and automatically generates personalized follow-up emails via Gmail API and tracking cards via Trello API. Built with a true agentic architecture using Model Context Protocol, Twinly reduces follow-up time from 30 minutes per person to 90 seconds—turning networking conversations into tracked opportunities automatically.
+
 # Composio Integration Demo
 
 This project demonstrates how to use Composio to connect users via auth config and execute tools (Gmail send email) using OpenAI Agents.
@@ -31,6 +35,17 @@ Run the script:
 ```bash
 python main.py
 ```
+
+### Draft-only usage
+
+Create a Gmail draft from `conversation.json` without sending:
+
+```bash
+python draft_email.py
+```
+
+This uses the Gmail toolkit action `GMAIL_CREATE_EMAIL_DRAFT` per the docs:
+`https://docs.composio.dev/toolkits/gmail`
 
 ### What happens:
 
