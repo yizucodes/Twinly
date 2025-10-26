@@ -66,7 +66,7 @@ print("STEP 2: Fetch Tools and Execute Gmail Action")
 print("=" * 80)
 
 # Get Gmail tools that are pre-configured for this user
-tools = composio.tools.get(user_id=externalUserId, tools=["GMAIL_SEND_EMAIL"])
+tools = composio.tools.get(user_id=externalUserId, tools=["GMAIL_CREATE_EMAIL_DRAFT"])
 print(f"✅ Successfully fetched {len(tools)} Gmail tool(s)\n")
 
 # Create an agent with Gmail capabilities
